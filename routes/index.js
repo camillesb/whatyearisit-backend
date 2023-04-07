@@ -7,7 +7,7 @@ qui renverra l’année dans laquelle nous sommes
 grâce à l’objet Date. */
 
 //1) Dans la route year je souhaite voir via get 
-router.get('/year', function(req, res, next) {
+router.get('/year', function(req, res) {
   const date = new Date();
   const year = date.getFullYear();
   res.json({ year: year });
